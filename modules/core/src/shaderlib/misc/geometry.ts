@@ -4,8 +4,6 @@
 
 import type {ShaderModule} from '@luma.gl/shadertools';
 
-
-
 const source = /* wgsl */ `\
 const SMOOTH_EDGE_RADIUS: f32 = 0.5;
 
@@ -73,8 +71,8 @@ float smoothedge(float edge, float x) {
 `;
 
 export default {
-  name: 'geometry', 
+  name: 'geometry',
   source,
-  vs, 
+  vs,
   fs
 } as const satisfies ShaderModule;

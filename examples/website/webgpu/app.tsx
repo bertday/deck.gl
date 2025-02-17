@@ -67,11 +67,10 @@ export default function App({
       deviceProps={{
         adapters: [webgpuAdapter]
       }}
-      layers={layers} 
-      initialViewState={INITIAL_VIEW_STATE} 
+      layers={layers}
+      initialViewState={INITIAL_VIEW_STATE}
       controller={true}
-    >
-    </DeckGL>
+    />
   );
 }
 
